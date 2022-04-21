@@ -14,11 +14,14 @@ import AvatarPic from "../../assets/avatars/ryan.png";
 
 //icons
 import { navData, helpNavData } from "./NavData";
-import MenuIcon from "@mui/icons-material/Menu";
 
 //top nav
-import IconButton from "@mui/material/IconButton";
 import { Avatar } from "@mui/material";
+
+//cards
+import PlantCard from "../plantCard/PlantCard";
+import { plants } from "../../data/plantData";
+import AllPlantCards from "../allPlants/AllPlants";
 
 const drawerWidth = 240;
 
@@ -87,6 +90,8 @@ export default function PermanentDrawerLeft() {
         sx={{ flexGrow: 1, bgcolor: "background.default", p: 3 }}
       >
         <Toolbar />
+
+        <AllPlantCards />
         <Typography paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
