@@ -63,7 +63,7 @@ export default function CardProgress() {
     <Grid container mt={3} sx={{ justifyContent: "center" }}>
       <Grid alignItems="center" item xs={5}>
         <Typography variant="subtitle1" sx={{ color: "#D3D3D3" }}>
-          Moisture
+          Hydration
         </Typography>
         <CircularProgressWithLabel value="90" />
       </Grid>

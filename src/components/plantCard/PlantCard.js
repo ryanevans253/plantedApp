@@ -6,7 +6,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import CardAvatar from "./CardAvatar";
-import ImageTest from "../../assets/images/Image";
 import img from "../../assets/images/fig.jpeg";
 import CardProgress from "./CardProgress";
 
