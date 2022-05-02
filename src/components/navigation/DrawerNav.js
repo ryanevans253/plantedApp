@@ -30,6 +30,7 @@ export default function PermanentDrawerLeft(props) {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
+        color="success"
         position="fixed"
         sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
       >
