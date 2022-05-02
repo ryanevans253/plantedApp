@@ -11,13 +11,17 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 
 export const navData = [
-  { text: "Dashboard", icon: <DashboardIcon /> },
-  { text: "My Plants", icon: <GrassIcon /> },
-  { text: "Automation", icon: <AutorenewIcon /> },
-  { text: "Tasks", icon: <TaskAltIcon /> },
-  { text: "Schedule", icon: <EventNoteIcon /> },
-  { text: "Integrations", icon: <IntegrationInstructionsIcon /> },
-  { text: "Guides", icon: <SummarizeIcon /> },
+  { text: "Dashboard", route: "", icon: <DashboardIcon /> },
+  { text: "My Plants", route: "plants", icon: <GrassIcon /> },
+  { text: "Automation", route: "automation", icon: <AutorenewIcon /> },
+  { text: "Tasks", route: "tasks", icon: <TaskAltIcon /> },
+  { text: "Schedule", route: "schedule", icon: <EventNoteIcon /> },
+  {
+    text: "Integrations",
+    route: "integrations",
+    icon: <IntegrationInstructionsIcon />,
+  },
+  { text: "Guides", route: "guides", icon: <SummarizeIcon /> },
 ];
 
 export const helpNavData = [

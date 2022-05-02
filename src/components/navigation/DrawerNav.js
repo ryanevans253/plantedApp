@@ -75,11 +75,16 @@ export default function PermanentDrawerLeft(props) {
           {navData.map((item) => {
             const Tag = item.icon;
             return (
-              <ListItem button key={item.text}>
-                <ListItemIcon>{Tag}</ListItemIcon>
+              <Link
+                to={`/${item.route}`}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <ListItem button key={item.text}>
+                  <ListItemIcon>{Tag}</ListItemIcon>
 
-                <ListItemText primary={item.text} />
-              </ListItem>
+                  <ListItemText primary={item.text} />
+                </ListItem>
+              </Link>
             );
           })}
         </List>
