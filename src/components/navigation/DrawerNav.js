@@ -24,6 +24,11 @@ import PlantCard from "../plantCard/PlantCard";
 import { plants } from "../../data/plantData";
 import AllPlantCards from "../allPlants/AllPlants";
 
+//router
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SinglePlantPage from "../../pages/SinglePlant";
+import { Link } from "react-router-dom";
+
 const drawerWidth = 240;
 
 export default function PermanentDrawerLeft(props) {
