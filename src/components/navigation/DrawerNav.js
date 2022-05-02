@@ -11,6 +11,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import AvatarPic from "../../assets/avatars/ryan.png";
+import logo from "../../assets/images/plantlogo.svg";
 
 //icons
 import { navData, helpNavData } from "./NavData";
@@ -30,11 +31,15 @@ export default function PermanentDrawerLeft(props) {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
-        color="success"
         position="fixed"
-        sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
+        sx={{
+          width: `calc(100% - ${drawerWidth}px)`,
+          ml: `${drawerWidth}px`,
+          backgroundColor: "#39b54a",
+        }}
       >
         <Toolbar>
+          {/* //turn this into a route with content being current page */}
           <Typography variant="h6" noWrap component="div">
             My Plants
           </Typography>
@@ -55,7 +60,10 @@ export default function PermanentDrawerLeft(props) {
         variant="permanent"
         anchor="left"
       >
-        <Toolbar />
+        <Toolbar>
+          <img src={logo} />
+        </Toolbar>
+
         <Divider />
 
         <List>
