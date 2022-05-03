@@ -8,6 +8,8 @@ import Schedule from "./pages/Schedule";
 import Integrations from "./pages/Integrations";
 import Guides from "./pages/Guides";
 import SinglePlantPage from "./pages/SinglePlant";
+import SignIn from "./pages/SignIn";
+import InputPlant from "./components/inputPlant/InputPlant";
 
 export default function MainRoutes() {
   return (
@@ -19,8 +21,10 @@ export default function MainRoutes() {
       <Route path="schedule" element={<Schedule />} />
       <Route path="integrations" element={<Integrations />} />
       <Route path="guides" element={<Guides />} />
+      <Route path="signin" element={<SignIn />} />
 
       <Route path="single" element={<SinglePlantPage />} />
+      <Route path="addplant" element={<InputPlant />} />
     </Routes>
   );
 }
